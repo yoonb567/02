@@ -1,0 +1,706 @@
+@charset "utf-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400; font-style: normal;}
+
+/* ------------------ common --------------------*/
+body, header, footer, main, nav, aside, section, article, p, address, div, h1, h2, h3, h4, h5, h6, form, fieldset, legend, table, tbody, th, td, ol, ul, li, dl, dt, dd, input, button, select, option, textarea, figure, figcaption, caption, blockquote{ margin:0; padding:0; }
+body{ background: #eee; font-family: "Nanum+Gothic", 'Noto Sans KR', sans-serif; font-size: 16px; overflow-x: hidden;}
+ol, ul{ list-style: none;}
+img{ display: block; border: 0px; }
+a{ text-decoration: none; }
+address, em, i{ font-style:normal; }
+button, fieldset, select, input{ border: 0px; }
+legend, caption, hr{ display:none; }
+table{ border-collapse: collapse; border-spacing: 0px;}
+html, body{ width: 100%; height: 100%;}
+body{ background-color: #7e7e7e;}
+
+#news_wrap{ 
+  background-color: #D8D9BD; 
+  margin:10px 10px;
+}
+#cover{ border-bottom: 10px solid #7e7e7e;}
+#cover .header{
+  position: relative;
+  width: 86%;
+  height: auto;
+  margin: 0 auto; 
+  padding: 26px 30px 10px 30px;
+}
+#cover .header h1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 43px;
+  color: #394963;
+  border-bottom: 4px solid #B69900;
+}
+#cover .header h1 img{
+  display: block;
+  width: 45px;
+}
+#cover .date{
+  display: flex; justify-content: space-between; text-align: center;
+  color:#5a5a5a; padding: 3px;
+  border-bottom: 2px solid #B69900;
+}
+#cover .header span{ 
+  font-weight: bold;
+  padding-right: 10px;
+}
+#cover h2{ 
+  font-size: 20px;
+  position: absolute;
+  right: 40px;
+  top: 140px;
+  color: #4a4a4a;
+}
+#cover h2 span{
+  color:#DA742B;
+} 
+#cover .video video{ 
+  display: block;
+  margin: 40px auto;
+  width: 75%;
+  height: 350px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+#cover .video figcaption{ 
+  font-size: 14px; color: #313131; text-align: center;
+}
+#cover .main_footer{ 
+  padding: 35px 15px 25px 30px;
+  width: 100%;
+  font-size: 12px;
+  box-sizing: border-box;
+  color: #414141;
+}
+#cover .main_footer strong{
+  display: block;
+  width: 96%;
+  font-size: 17px;
+  border-top: 2px solid #B69900;
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+} 
+#cover .main_footer strong span{ 
+  font-size: 12px; font-weight: normal; 
+  padding-left: 5px;
+  letter-spacing: 0.3px;
+}
+#cover .main_footer p:last-child{
+  font-size: 10px;
+  color: #4a4a4a;
+  letter-spacing: 0.3px;
+  margin-right: 15px;
+}
+  /* ------------ cover end ---------  */
+  /* ------------ page 1 시작 ---------  */
+#page1 { border-bottom: 10px solid #7e7e7e;}
+#page1 .header{ 
+  width: 90%; 
+  display: flex; justify-content: space-between; align-items: center;
+  padding-top: 25px;  
+  padding-bottom: 3px;  
+  margin: 0 auto;
+  border-bottom: 2px solid #B69900;
+}
+#page1 .header p{ 
+  font-size: 14px; color: #4a4a4a; 
+}
+#page1 .header span{ 
+  font-weight: bold;
+}
+#page1 .sec_one{ 
+  width: 90%; 
+  margin: 10px auto;
+  margin-bottom: 40px;
+}
+#page1 .sec_one article{ 
+  position: relative; 
+}
+#page1 .sec_one h2 {
+  padding: 5px 0 17px 0;
+  text-align: center;
+  font-size: 23px;
+}
+#page1 .sec_one img{
+  width: 90%; 
+  margin: 0 auto;
+}
+#page1 .sec_one p .one{
+  font-size: 20px;
+}
+#page1 .sec_one p .two{
+    font-size: 15px;
+    position: absolute;
+    bottom: -15px;
+    right: 20px;
+}
+#page1 .sec_one p{
+  width: 90%; 
+  margin: 10px auto;
+  line-height: 1.7rem;
+  padding-top: 7px;
+  text-align: justify;
+}
+#page1 .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border-radius: 50%;
+  background-image: url('img/arrow.png');
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 18px;
+  width: 45px;
+  height: 45px;
+} 
+
+/*  ---------- page 1 end ---------- */
+/*  ----------- page 2 start ---------- */
+
+#page2 { border-bottom: 10px solid #7e7e7e;}
+#page2 .header{ 
+  width: 90%; 
+  display: flex; justify-content: space-between; align-items: center;
+  padding-top: 25px;  
+  padding-bottom: 3px;  
+  margin: 0 auto;
+  border-bottom: 2px solid #B69900;
+}
+#page2 h2{ 
+  margin: 15px auto;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+#page2 section{
+  width: 92%;
+  margin: 10px auto;
+  margin-bottom: 10px;
+}
+#page2 .field_service h3{ 
+  font-size: 20px;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+  padding-left: 15px;
+  font-weight: 500;
+}
+#page2 .field_service figure{
+  float:left;
+  width: 58%;
+  margin: 7px 15px 5px 15px;
+} 
+#page2 .field_service figure img{
+  width: 100%;
+  margin-right: 12px;
+}
+#page2 .field_service figure figcaption{
+  font-size: 12px;
+  text-align: center;
+}
+#page2 section .field_service p{
+    width: 92%;
+    margin: 0px auto;
+    line-height: 1.7rem;
+    text-align: justify; 
+    border-bottom: 1px solid #7e7e7e;
+    padding-bottom: 30px;
+}
+#page2 .contest h3{ 
+  margin-top: 20px;
+  font-size: 20px;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+  padding-left: 15px;
+  font-weight: 500;
+}
+#page2 .contest figure{
+  float: right;
+  width: 50%;
+  margin: 3px 25px 0px 5px;
+} 
+#page2 .contest img{
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  padding: 3px 0 5px 12px;
+  margin-right: 15px;
+  overflow: hidden;
+}
+#page2 .contest figure figcaption{
+  font-size: 12px;
+  text-align: center;
+}
+#page2 .contest p{
+  width: 92%;
+  margin: 0px auto;
+  line-height: 1.7rem;
+  text-align: justify;
+  border-bottom: 1px solid #8f8f8f;
+  padding-bottom: 20px;
+}
+#page2 .summer_school h3{ 
+  margin-top: 20px;
+  font-size: 20px;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+  padding-left: 24px;
+  font-weight: 500;
+}
+#page2 .summer_school figure{
+  position: relative;
+} 
+#page2 .summer_school img{
+  width: 85%;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+#page2 .summer_school figure figcaption{
+  font-size: 12px; 
+  text-align: center;
+}
+#page2 .summer_school p{
+  padding-top: 12px;
+  width: 90%; 
+  margin: 0px auto;
+  line-height: 1.7rem;
+  text-align: justify; 
+  border-bottom: 1px solid #7e7e7e;
+  padding-bottom: 30px;
+}
+#page2 footer{
+  border-top: 2px solid #B69900;
+  padding: 5px 0 0px 0;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+#page2 footer p{
+  font-size: 14px;
+}
+/* --------------- page2 end -------------- */
+/* --------------- page3 start -------------- */
+#page3{ border-bottom: 10px solid #7e7e7e;}
+#page3 .header{ 
+  width: 90%; 
+  display: flex; justify-content: space-between; align-items: center;
+  padding-top: 25px;  
+  padding-bottom: 3px;  
+  margin: 0 auto;
+  border-bottom: 2px solid #B69900;
+}
+#page3 h2{
+  margin: 15px auto;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+#page3 section{
+  width: 90%;
+  margin: 10px auto;
+  margin-bottom: 40px;
+}
+#page3 .youth_worship h3{ 
+  font-size: 20px;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+  padding-left: 15px;
+  font-weight: 500;
+}
+#page3 .youth_worship video{
+  width: 90%;
+  margin: 0 auto;
+  margin-left: 17px;
+}
+#page3 .youth_worship figure figcaption{
+  font-size: 12px; 
+  text-align: center;
+}
+#page3 .youth_worship p{
+  padding-top: 12px;
+  width: 90%; 
+  margin: 0px auto;
+  line-height: 1.7rem;
+  text-align: justify; 
+  border-bottom: 1px solid #7e7e7e;
+  padding-bottom: 30px;
+}
+#page3 .shekinah h3{ 
+  margin-top: 20px;
+  font-size: 20px;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+  padding-left: 15px;
+  font-weight: 500;
+}
+#page3 .shekinah img{
+  width: 85%;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+#page3 .shekinah figure figcaption{
+  font-size: 12px; 
+  text-align: center;
+}
+#page3 .shekinah p{
+  padding-top: 12px;
+  width: 90%;
+  margin: 0px auto;
+  line-height: 1.7rem;
+  text-align: justify;
+}
+#page3 footer{
+  border-top: 2px solid #B69900;
+  padding: 5px 0 10px 0;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+#page3 footer p{
+  font-size: 14px;
+}
+ /* ---------- page3 end --------  */
+ /* ---------- page4 start ------- */
+#page4 { border-bottom: 10px solid #7e7e7e;}
+#page4 .header{ 
+  width: 90%; 
+  display: flex; justify-content: space-between; align-items: center;
+  padding-top: 25px;  
+  padding-bottom: 3px;  
+  margin: 0 auto;
+  border-bottom: 2px solid #B69900;
+}
+#page4 .wrap{ 
+  width: 90%;
+  margin: 0 auto;
+}
+#page4 .notice{ 
+  column-count: 2;
+  column-rule: 1px solid #5d5d5d;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  }
+  #page4 .notice .title{ 
+    display: flex; justify-content: center; align-items: center;
+    margin-bottom: 10px;
+  }  
+#page4 .notice .title h2{
+  letter-spacing: 3px;
+  padding: 0px 7px 0 7px;
+}
+#page4 .notice div img{
+  display: inline-block;
+  width: 18px; 
+  padding-right: 4px;
+} 
+#page4 .notice .lesson h3{
+  padding: 12px 0 10px 20px;
+}
+#page4 .notice .lesson h3 img{
+  display: inline-block;
+  width: 12px; 
+  padding-right: 5px;
+} 
+#page4 .notice .lesson p{
+  padding: 7px 10px 0px 18px;
+  text-align: justify;
+  line-height: 1.7em;
+} 
+#page4 .notice .lesson span{
+  display: block;
+  text-indent: -9999px;
+  border-bottom: 1px dotted #7e7e7e;
+  width: 80%;
+  margin: 0px auto;
+}
+#page4 .wanted h3{
+  padding: 20px 0 10px 11px;
+  font-size: 18px;
+}
+#page4 .wanted h3 img{
+  display: inline-block;
+  width: 12px;
+  padding-right: 5px;
+}
+#page4 .notice .wanted p{
+  padding: 10px 10px 0px 20px;
+  text-align: justify;
+  line-height: 1.7rem;
+}
+#page4 .notice .wanted p span{
+  font-size: 14px;
+}
+#page4 .notice .wanted .borderline{
+  text-indent: -9999px;
+  border-bottom: 1px dotted #7e7e7e;
+  width: 65%;
+  margin: -10px auto;
+}
+#page4 .newsaint h3{
+  padding: 20px 0 15px 13px;
+  font-size: 18px;
+}
+#page4 .newsaint ul{
+  columns: 30px 3;
+  column-gap: 0px;
+  padding: 0px 20px 10px 15px;
+} 
+#page4 .notice .prayer div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #5d5d5d;
+  width: 70%;
+  height: 35px;
+  margin: 18px auto;
+  border-radius: 20px;
+}
+#page4 .notice .prayer img{
+  display: inline-block;
+  width: 16px;
+}
+#page4 .notice .prayer h3{
+  letter-spacing: 0.3px;
+  padding: 12px 0 10px 12px;
+}
+#page4 .notice .prayer p{
+  background: url('img/circle.png') no-repeat 8px 8px;
+  background-size: 12px;
+  border-bottom: 30px;
+  padding: 0px 20px 5px 25px;
+}
+#page4 footer{
+  border-top: 2px solid #B69900;
+  padding: 5px 0 10px 0;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+#page4 footer p{
+  font-size: 14px;
+}
+ /* ---------- page4 end ----------  */
+
+ /* --------- mediaquery ----------- */
+@media screen and (min-width:348px) and (max-width:395px){
+  body{font-size: 14px;}
+  body p{line-height: 1.5rem !important;}  
+  #cover .header h1{  
+    font-size: 36px;
+  }
+  #cover .header h1 img{ width: 40px;  }
+  #cover .date{
+    display: flex; justify-content: space-between; text-align: center;
+    color:#5a5a5a; padding: 3px;
+    border-bottom: 2px solid #B69900;
+  }
+  #cover h2{ 
+    position: absolute;
+    right: 40px;
+    top: 131px;
+  }
+  #cover .video video{ 
+    display: block;
+    margin: 40px auto;
+    width: 75%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 5px;
+  }
+  #cover .video figcaption{ 
+    font-size: 12px; color: #313131; text-align: center;
+  }
+  #cover .main_footer{ 
+    padding: 25px 15px 25px 30px;
+    font-size: 10px; 
+  }
+  #cover .main_footer p{
+    line-height: 1.4em !important;
+  }
+  #page1 .header p{ 
+    font-size: 14px; color: #4a4a4a; 
+  }
+  #page1 .sec_one h2 {
+    font-size: 20px;
+  }
+  #page1 .sec_one p .two{
+    font-size: 13px;
+    bottom: 0px;
+}
+  #page3 section {margin-bottom: 28px;}
+  #page3 .youth_worship h3{
+    font-size: 18px;
+  } 
+  #page3 .shekinah h3 {
+    margin-top: 12px;
+    padding-left: 22px;
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+  #page4 .notice .lesson h3 {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+  }
+  #page4 .notice .wanted h3 {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+  }
+  #page4 .notice .wanted p{
+    letter-spacing: -0.8px;
+  }
+  #page4 .newsaint h3 {
+    font-size: 16px;
+  }
+  #page4 .notice .prayer p{
+    text-align: justify;
+    letter-spacing: -0.8px;
+}
+}
+/* (max-width:347px) and (min-width:320px) */
+@media screen and (max-width:347px) and (min-width:320px){
+  body{font-size: 13px;}
+  body p{line-height: 1.4rem !important;}
+  #cover .header h1{ font-size: 32px;}
+  #cover .main_footer strong {font-size: 14px; }
+  #cover .header h1 img{width: 40px;}
+  #cover h2{ 
+    font-size: 18px;
+    position: absolute;
+    right: 30px;
+    top: 126px;
+    color: #4a4a4a;
+  }
+  #cover .video video{ 
+    display: block;
+    margin: 40px auto;
+    width: 80%;
+    height: 260px;
+    object-fit: cover;
+    margin-bottom: 5px;
+  }
+  #cover .video figcaption{ 
+    font-size: 11px; color: #313131; text-align: center;
+  }
+  #cover .main_footer{padding: 20px 15px 25px 30px}
+  #cover .main_footer strong span {
+    font-size: 10px;
+  }
+  #cover .main_footer p{
+    line-height: 1.3em !important;
+    font-size: 10px;
+  }
+  #cover .hide-tel{ display: none;}
+  #page1 .header p{ 
+    font-size: 13px; color: #4a4a4a; 
+  }
+  #page1 .sec_one {
+    margin-bottom: 20px;
+}
+  #page1 .sec_one h2 {
+    padding: 5px 0 17px 0;
+    text-align: center;
+    font-size: 17px;
+  }
+  #page1 .sec_one p .one {
+    font-size: 16px;
+}
+  #page1 .sec_one p .two{
+    font-size: 12px;
+    bottom:-5px;
+}
+  #page2 .field_service h3 {
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+  #page2 section .field_service p {
+    padding-bottom: 22px;
+}
+  #page2 .contest h3 {
+    font-size: 18px;
+    padding-left: 10px;
+}
+  #page2 .summer_school p{
+    padding-bottom: 20px;
+}
+#page2 .summer_school h3 {
+  font-size: 18px;
+}
+  #page3 section {
+  margin-bottom: 25px;
+}
+#page3 .youth_worship h3 {
+  font-size: 18px;}
+#page3 .youth_worship p {
+  padding-bottom: 22px;
+}
+  #page3 .shekinah h3{ 
+  font-size: 18px;
+}
+#page3 .shekinah h3 {
+  margin-top: 12px;
+  padding-left: 22px;
+} 
+#page4 .notice{
+  margin-bottom: 12px;
+}
+#page4 .notice .title {
+  margin-bottom: 5px;
+}
+#page4 .wanted h3{
+  font-size: 14px;
+}
+#page4 .notice .lesson p{
+  padding: 0px 10px 0px 15px;
+}
+#page4 .notice .lesson h3 img{
+  width: 10px;}
+#page4 .notice .wanted p{ 
+  padding: 5px 10px 0px 15px;
+  font-size: 13px;
+}
+#page4 .notice .wanted p span {
+  font-size: 12px;
+}
+#page4 .newsaint h3{
+  font-size: 15px;
+}
+#page4 .newsaint ul {
+  padding: 0px 10px 10px 10px;
+}
+#page4 .notice .prayer img {
+  width: 14px;
+  padding: 0px;
+}
+#page4 .notice .prayer h3{
+  letter-spacing: 0.3px;
+  padding: 10px 0 10px 12px;
+}
+#page4 .notice .prayer div {
+  height: 30px;
+}
+#page4 .notice .prayer p {
+  background: url(img/circle.png) no-repeat 8px 6px;
+  border-bottom: 18px;
+  padding: 0px 10px 5px 25px;
+  text-align: justify;
+  letter-spacing: -0.3px;
+  background-size:10px;
+} 
+  #page1 .top a{
+    right: 30px;
+    bottom: 30px;
+    font-size: 13px;
+    width: 35px;
+    height: 35px;
+  }
+}
